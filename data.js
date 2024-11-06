@@ -1,238 +1,317 @@
 export const bio = [
-    "Hello there, This is Vinay Somawat.",
-    `Experienced Frontend Software Engineer with a strong track record of successfully upgrading applications, optimizing performance, and delivering innovative solutions.`,
-    `Eager to apply my technical expertise and in-depth
-    product understanding to drive impactful contributions and exceed expectations in challenging projects.`,
+    "Hi, I’m Sergio Suzerain Osson, an unemployed guy. I focus on computer vision applied to remote sensing images",
+    `My journey has woven together a deep interest in artificial intelligence and a practical approach to problem-solving, particularly through deep learning`,
+    `Alongside remote sensing, I enjoy tackling web development projects, bringing both the front-end and back-end to life.
+    Whether analyzing satellite images or crafting user-centric web experiences
+    I’m passionate about using technology to create impactful, data-driven solutions.`,
     "Thanks for taking the time to learn a little about me!",
 ];
 
 export const skills = [
     {
         title: "Languages",
-        skillName: "JavaScript, TypeScript",
+        skillName: "C++, JS, Java, Python",
         color: "1",
-        percentage: "80",
+        percentage: "85",
     },
     {
         title: "Frameworks/Libraries",
-        skillName: "Angular, RxJS, NGXS",
-        color: "6",
-        percentage: "70",
+        skillName: "VueJS, ReactJS",
+        color: "2",
+        percentage: "75",
     },
     {
         title: "Design",
-        skillName: "HTML, Bootstrap, Tailwind",
-        color: "4",
+        skillName: "HTML, Bootstrap, Tailwind, CSS",
+        color: "3",
         percentage: "70",
     },
     {
         title: "Version Control",
-        skillName: "GitHub, JIRA, Bitbucket",
-        color: "7",
-        percentage: "70",
-    },
-    {
-        title: "Tools",
-        skillName: "Postman, Chrome DevTools",
-        color: "3",
+        skillName: "GitHub, JIRA",
+        color: "4",
         percentage: "80",
     },
     {
-        title: "Analytics",
-        skillName: "CleverTap, Countly",
+        title: "AI",
+        skillName: "PyTorch, Scikit, Spark, Keras, OpenCV",
         color: "5",
-        percentage: "50",
+        percentage: "90",
     },
     {
-        title: "IDE",
-        skillName: "VS Code",
+        title: "Databases",
+        skillName: "MongoDB, MySQL",
         color: "6",
-        percentage: "70",
+        percentage: "90",
+    },
+    {
+        title: "DevOps",
+        skillName: "AWS, GCP, K8S, Docker",
+        color: "7",
+        percentage: "76",
+    },
+    {
+        title: "Backend",
+        skillName: "Flask, ExpressJS, Node.js, Django, PHP",
+        color: "8",
+        percentage: "85",
     },
 ];
 
 export const projects = {
+    tsProjects:[
+        {
+            projectName: "Electricity Consumption Study",
+            image: "images/electricity_consumption.png",
+            summary:
+                "Examination of modern machine learning and deep learning algorithms  to solve time series classification problems,\
+                 focusing on the domain of electricity consumption. In particular, to detect the presence and activation of appliances.",
+            preview: "https://drive.google.com/file/d/1T4ZD7LmfdOHMKeYj9oslgBIUmVrqtkJT/view?usp=sharing",
+            techStack: ["Time Series", "Spark", "XGBoost"],
+        },
+        {
+            projectName: "Epileptic cases detection",
+            image: "images/epileptic_detection.png",
+            summary:
+                "Comparison of three methods for detecting and distinguishing healthy cases \
+                from epileptic cases, without the tedious manual feature extraction procedures. Integration of the three methods in a big data schema.",
+            preview: "https://drive.google.com/file/d/1t952mfQdoTVARw7I7mD9eQY2nlRWv2fO/view?usp=sharing",
+            techStack: ["BiLSTM", "EEG Signals", "Spark", "SQL", "Big Data"],
+        },
+    ],
     webProjects: [
         {
-            projectName: "Programming Diaries",
-            image: "images/programmingdiaries.png",
+            projectName: "Textractor",
+            image: "images/textractor.png",
             summary:
-                "Developed a full stack blog application to provide content on techical topics across the internet with admin interface.",
-            preview: "https://programmingdiaries.herokuapp.com/",
-            techStack: ["Django", "SQLite", "Bootstrap", "JavaScript", "Heroku"],
+                "Web application where you can upload a handwritting image from a board or on paper, and it will extract the text within. \
+                The app is backed by an LLM to help correct the extracted text.",
+            preview: "https://drive.google.com/file/d/1adu1uC9bHqoXH1EKkWExEsa8n158QSA2/view?usp=sharing",
+            techStack: ["Flask", "ReactJS", "C++", "OCR"],
         },
         {
-            projectName: "Find Your Bank",
-            image: "images/findyourbank.png",
+            projectName: "MindMania",
+            image: "images/mind_mania.svg",
             summary:
-                "Developed a React application to render a list of banks fetched from API. Filtered the banks based on queries from localstorage, marked favorites banks.",
-            preview: "https://clever-fermi-0d5d76.netlify.app",
-            techStack: ["Reactjs", "Bootstrap", "JavaScript", "Netlify"],
+                "Online platform game created to have people playing at guessing others thoughts. Much more games will be added to this in the future.",
+            preview: "",
+            techStack: ["Django", "ReactJS", "SQL"],
         },
         {
-            projectName: "Web Portfolio",
-            image: "images/portfolio.png",
+            projectName: "Music Tracker",
+            image: "images/music_tracker.png",
             summary:
-                "Web Portfolio to showcase acadmics, skills, projects and contact details in better manner.",
-            preview: "https://github.com/vinaysomawat/Travographer-Portal",
-            techStack: ["HTML", "Bootstrap", "JavaScript"],
+                "Online web app tools to help you keep track of favorite musics while displaying the latest chart from Deezer API. Through this app\
+                you can save your music preferences and download them.",
+            preview: "https://github.com/tiserge2/music-tracking",
+            techStack: ["ReactJS", "ExpressJS", "MongoDB", "JWT", "Deezer API", "Youtube API"],
         },
         {
-            projectName: "Resume Builder",
-            image: "images/resume-builder.png",
+            projectName: "ChatSOS",
+            image: "images/llm_chat.png",
             summary:
-                "Browser based editor to build and download Resumes in a customizable templates.",
-            preview: "https://vinaysomawat.github.io/Resume-Builder",
-            techStack: ["HTML", "Bootstrap", "JavaScript"],
+                "RAG(Retrieval Augmented Generation) web application where you can upload your pdf and ask question about it. \
+                You can either question your own source of data of exisiting database.",
+            preview: "https://github.com/tiserge2/llm_chat",
+            techStack: ["LLM", "LangChain", "Pinecone", "OpenAI"],
         },
+        {
+            projectName: "React Social Card",
+            image: "images/social_card.png",
+            summary:
+                "Configurable web page created with React to showcase color change on card and background. Very nice to see how you \
+                you can play with the colors, and make it how you feel.",
+            preview: "https://react-social-card-1mtt9zykc-tiserge2.vercel.app",
+            techStack: ["ReactJS", "JavaScript"],
+        },
+        {
+            projectName: "HaiPlast Management App",
+            image: "images/haiplast.png",
+            summary:
+                "Application created to handle the management of the process in plastic transformation company.\
+                All the aspect of the company is centralized in a single application. Offering also forecasting on plastic collection.",
+            preview: "",
+            techStack: ["PHP", "HTML", "SQL", "CI/CD", "Bootstrap"],
+        },
+        
     ],
     softwareProjects: [
         {
-            projectName: "Pizza Ordering ChatBot",
-            image: "images/pizzaorderchatbot.png",
+            projectName: "Fancy Fencing",
+            image: "images/game_playing.png",
             summary:
-                "ChatBot using Dialogflow, Firebase database which stores the chat data in the realtime database.",
-            preview: "https://github.com/vinaysomawat/Pizza-Ordering-ChatBot",
-            techStack: ["Dailogflow", "Firebase"],
+                "Two players CLI games, where you can play with your friends on a the same network. \
+                Fencing has never been so simple and funny to play with track of your points.",
+            preview: "https://github.com/tiserge2/fancy-fency",
+            techStack: ["MultiThreading", "Python", "Networking"],
         },
         {
-            projectName: "WhatsApp-Bot",
-            image: "images/whatsappbot.jpg",
+            projectName: "Birthday Reminder",
+            image: "images/birthday.png",
             summary:
-                "Python script which helps to send messages to WhatsApp contacts automatically using selenium and web automation.",
-            preview: "https://github.com/vinaysomawat/WhatsApp-Bot",
-            techStack: ["Selenium", "Chrome Webdriver", "Python"],
+                "CLI-based application to manage birthday with notifications. This is the easiest way to save and remind \
+                of your friends birthday, if you don't want to install a graphical app for that.",
+            preview: "",
+            techStack: ["Java", "Linux", "SpringBoot", "MultiThreading"],
         },
         {
-            projectName: "Bill Generator",
-            image: "images/billgenerator.png",
+            projectName: "LockDat",
+            image: "images/lockdat.png",
             summary:
-                "GUI to transfer data to excel sheets and generate bills on the local shops.",
-            preview: "https://github.com/vinaysomawat/Bill-Generator",
-            techStack: ["Tkinter", "Openxlpy", "Python"],
-        },
+                "Desktop based application to lock your files on your PC using your face. It uses the AES encryption to encrypt \
+                your files in a folder. Harness OpenCV libraries for face recognition.",
+            preview: "https://github.com/tiserge2/facial_recognition_encrypter",
+            techStack: ["AES", "Linux", "JavaFX", "SQL", "OpenCV", "Face Recognition"],
+        }
     ],
     androidProjects: [
         {
-            projectName: "NITW-CSE",
-            image: "images/nitwcse.jpg",
+            projectName: "PwofPam",
+            image: "images/pwofpam.jpg",
             summary:
-                "The Application display details of Department courses, reference books, research, publication and faculty profile.",
-            preview: "https://github.com/vinaysomawat/NITW-CSE",
-            techStack: ["JAVA", "XML", "Android"],
+                "Application to connect tutees and tutors where they can setup mentorship. \
+                The platform allows any student to search for tutors, discuss, plan and pay directly. \
+                Ressources can also be shared and sold through it.",
+            preview: "/#",
+            techStack: ["JAVA", "XML", "Android", "Firebase", "Moncash API"],
         },
         {
-            projectName: "CareerHigh-App",
-            image: "images/carrerhigh.png",
+            projectName: "PaypalSDK",
+            image: "images/paypal_sdk.png",
             summary:
-                "The Application display the webpages of website careerhigh.in in android devices.",
-            preview: "https://github.com/vinaysomawat/CareerHigh-Android",
-            techStack: ["JAVA", "XML", "Android"],
+                "Implementation of the Paypal payment SDK in android platform. Allow the integration of Paypal payment \
+                method easily in any android application to make easy money transaction.",
+            preview: "https://github.com/tiserge2/paypalSDK",
+            techStack: ["JAVA", "XML", "Android", "Paypal"],
         },
+        {
+            projectName: "ContactMe",
+            image: "images/contact_me.png",
+            summary:
+                "This application helps to manage your contact on your phone. Easily creates, delete and edit your contact with \
+                this simple application. It baked by the simple and light sql database SQLite",
+            preview: "https://github.com/tiserge2/contactme",
+            techStack: ["Kotlin", "XML", "Android", "SQL", "SQLite"],
+        }
     ],
-    freelanceProjects: [
+    cvProjects: [
         {
-            projectName: "SnylloAir.com",
-            image: "images/snylloair.png",
+            projectName: "Text Line Extraction",
+            image: "images/text_line_extraction.jpg",
             summary:
-                "Developed a company website to showcase the purpose, services and products provided by the company to audience.",
-            preview: "https://www.snylloair.com/",
-            techStack: ["Bootstrap", "JavaScript", "AWS-S3"],
+                "Board text extractor done with C++. The objective is, using image analysis techniques, to extract the board, then extract the line of text and to recognize the text using OCR.",
+            preview: "",
+            techStack: ["C++", "Hough Line Transform", "CNN"],
         },
         {
-            projectName: "Delivery+",
-            image: "images/AM-Logo-.png",
-            summary: "Android Application to display website in android devices.",
+            projectName: "Object Spatial Relationship Study",
+            image: "images/object_spat.png",
+            summary: "The objective is to expand the concept of Histogram of forces to analyze the evolution of spatial configuration between objects over time (temporal strip), for example in a video.",
             preview:
-                "https://play.google.com/store/apps/details?id=com.americanmarket.americanmarketandroid",
-            techStack: ["Android", "JAVA", "Play Store"],
+                "https://docs.google.com/presentation/d/1R8JVILRTVa5mDhc0xkPg4ktOZsY_QvNq/edit?usp=sharing&ouid=114852330427597574830&rtpof=true&sd=true",
+            techStack: ["Python", "TSNe", "K-Means", "PCA", "DBScan"],
         },
-    ],
+        {
+            projectName: "Remote Sensing Image Caption Generation",
+            image: "images/some_result.png",
+            summary: "This project is an implementation of the paper Exploring Models and Data for Remote Sensing Image Caption Generation by Xiaoqiang Lu et al. It creates descriptive text for remote sensing images",
+            preview:
+                "https://github.com/tiserge2/image-caption-generation",
+            techStack: ["Remote Sensing", "RNN", "LSTM", "Attention", "CNN"],
+        },
+        {
+            projectName: "Fuzzy C-Mean Segmentation",
+            image: "images/fuzzy_cmeans.png",
+            summary: "This is a segmentation method based on the fuzzy clustering algorithm. Fuzzy cmeans (FCM) is a method of clustering which allows one piece of data to belong to two or more clusters. ",
+            preview:
+                "https://github.com/tiserge2/fuzzy-clustering",
+            techStack: ["Fuzzy Logic", "Segmentation"],
+        },
+        {
+            projectName: "Segmentation and Tracking of Cells",
+            image: "images/seg_track_cells.png",
+            summary: "This project aims at segmenting images of cells and track them overtime. It leverages the StarDist model CNN based and is fine-tuned over a selected dataset.",
+            preview:
+                "https://colab.research.google.com/drive/1P_oc3gezq8Cohf4YytpOEE8SE9u9oaHS?usp=sharing",
+            techStack: ["StarDist", "TrackPy", "Segmentation", "CNN"],
+        },
+        {
+            projectName: "Face comparison",
+            image: "images/face_comparison.png",
+            summary: "I was having too much people telling me I look like Serge Aurier. So I wanted to verify this using a face comparator app :-). \
+                    With the use of pre-trained models and the cosine similarity score, it was achievable.",
+            preview:
+                "https://colab.research.google.com/drive/1FVfIiaHY-Em0sz1Kxlh1DuoLKle_zpQu?usp=sharing",
+            techStack: ["Keras", "FaceNet", "Cosine Similarity"],
+        }
+    ]
 };
 
 export const experience = [
     {
-        title: "Shiprocket (Bigfoot Solution Private Limited)",
-        duration: "September 2022 - Present",
-        subtitle: "Software Engineer",
+        title: "Caerus Medical",
+        duration: "Sep 2023 - Oct 2024",
+        subtitle: "Apprentice Data Scientist",
         details: [
-            "Working in support and escalation team."
+            "Used ITK‑SNAP to segment vertebrae in MRI images, gaining familiarity with spinal anatomy.",
+            "Wrote scripts for data augmentation to balance datasets, using techniques like flipping and rotation.",
+            "Applied deep learning models like AlexNet and ResNet to classify endplate degeneration in MRI images,\
+             focusing on Sagittal T1 and Sagittal T2 modalities.",
+            "Evaluated model metrics to measure accuracy, precision, recall, and F1‑score. \
+            Compared results to earlier models and state‑of‑the‑art bench‑marks.",
+            "Fine‑tuned hyperparameters and used methods like online data augmentation and L1/L2 regularization to enhance model performance.",
+            "Developed unit tests to ensure code quality and reliability for key scripts and functions."
         ],
-        tags: ["JavaScript", "Angular", "Bootstrap", "Nodejs", "Jenkins"],
-        icon: "truck ",
-    },
-    {
-        title: "Biofourmis India Private Limited",
-        duration: "April 2022 - Jul 2023",
-        subtitle: "Software Engineer",
-        details: [
-            `Implemented microfrontends using the Module Federation Plugin in Angular.
-            Rendered components from remote modules/repositories, enabling a modular and scalable architecture`,
-            `Upgraded application with a dynamic base URL for flexible operation across multiple regions and verticals, leading to
-            recognition with the Biofourmis Bravo award in Q1, 2023.`,
-            `Implemented RxState for managing local state in components, resulting in elegant and reactive facades.`,
-            `Utilized Twilio-Video for group video call rooms and Countly for Web Analytics.`,
-            `Integrated NGXS WebSocket, enhancing state management and replacing legacy service injections.`,
-            `Implemented extensive RxJS usage for reactive programming, resulting in efficient data handling, improved state
-            management, and enhanced application performance.`,
-            `Dramatically optimized load time and performance through code splitting, lazy loading, caching, and preload`,
-            `Enhanced video call experience by implementing real-time switching of I/O devices and audio level indicators,
-            resulting in reduced audio issues and increased user satisfaction.`,
-            `Owned and led successful Angular application upgrades from version 12 to 13 and 14, improving performance
-            and enhancing features.`,
-        ],
-        tags: ["JavaScript", "Angular", "RxJS", "NGXS", "TypeScript", "RxState", "Webpack", "Optimization"],
+        tags: ["CNN", "Jira", "PyTorch", "Git"],
         icon: "heartbeat",
     },
     {
-        title: "Novopay Solutions Private Limited",
-        duration: "June 2020 - April 2022",
-        subtitle: "Software Engineer",
+        title: "uTest/Applause",
+        duration: "Sept 2018 - May 2022",
+        subtitle: "Automation Engineer",
         details: [
-            `Implemented AePS Services, including Bio-metric eKYC, Cash Withdrawal, Balance Enquiry, Mini-Statements,
-            and Money transfer.`,
-            `Implemented QR Code integration for retailer wallet money loading, Clevertap events for user action tracking,
-            Freshdesk ticketing, Chatbot services, and Retailer onboarding/admin interfaces.`,
-            `Developed retailer QR code system for seamless money loading into wallets, resulting in improved user transactions.`,
-            `Achieved 70 percent code coverage of the entire application by writing unit tests for legacy code.`,
+            "Built web platform to collect various data types like images, text, voice, and video.",
+            "Stored and managed collected data on AWS S3, creating automated scripts to clean, process, \
+            and verify metadata before further processing.",
+            "Developed scripts to process and validate collected data, then uploaded it to customer servers\
+             for use in AI model training."
         ],
-        tags: ["JavaScript", "Angular", "Bootstrap", "Nodejs", "Jenkins"],
-        icon: "qrcode",
-    },
-    {
-        title: "ThinkPedia LLP",
-        duration: "May 2019 - June 2019",
-        subtitle: "SDE Intern",
-        details: [
-            `Developed a customer web application for social media management, supporting the advertisement domain.`,
-        ],
-        tags: ["JavaScript", "Angular", "Bootstrap", "Java", "Spring Boot"],
-        icon: "group",
-    },
+        tags: ["JavaScript", "Python", "VueJS", "Flask", "NextJS", "AWS", "S3", "Optimization", "ExpressJS"],
+        icon: "cubes",
+    }
 ];
 
 export const education = [
     {
-        title: "B.Tech. in Computer Science and Engineering",
-        duration: "2016 - 2020",
-        subtitle: "National Institute of Technology, Warangal",
+        title: "Université Paris Cité",
+        duration: "2022-2024",
+        subtitle: "MSc. in Computer Vision and Intelligent Machines, Paris",
         details: [],
         tags: [
-            "Data Structures & Algorithms",
-            "Operating Systems",
-            "Database Management System",
-            "Computer Networks",
-            "Compiler Designing",
-            "Cloud Computing",
+            "Algorithmic Complexity",
+            "Optimization and Algorithmics",
+            "Big Data",
+            "Machine Learning",
+            "Algorithmic Geometry",
+            "Image Analysis",
+            "Vision and Perception",
+            "Knowledge Engineering",
+            "Data Science",
+            "Pattern Recognition",
+            "3D Imaging",
+            "Biomedical Imaging",
+            "Video Sequences",
+            "Vision System Modeling",
+            "Human-Robot Interaction"
         ],
         icon: "graduation-cap",
     },
     {
-        title: "Class 12th in Science and Mathematics",
-        duration: "",
-        subtitle: "Board of Secondary Education, Rajasthan",
+        title: "Bachelor's Degree in Computer Science",
+        duration: "2016-2021",
+        subtitle: "Ecole Supérieure d’Infotronique d’Haïti, Port-au-Prince",
         details: [],
-        tags: ["Physics", "Chemistry", "Mathematics"],
+        tags: ["Algorithmics", "Descriptive Statistics", "Statistical Inference", "Signal Analysis", "Numerical Analysis"],
         icon: "book",
     },
 ];
@@ -243,16 +322,25 @@ export const footer = [
         data: [
             {
                 text: "Stackoverflow",
-                link: "https://stackoverflow.com/users/8461233/vinay-somawat",
+                link: "https://stackoverflow.com/users/7879903/tiserge2",
             },
             {
                 text: "GitHub",
-                link: "https://github.com/vinaysomawat",
+                link: "https://github.com/tiserge2",
+            }
+        ],
+    },
+    {
+        label: "Social Profiles",
+        data: [
+            {
+                text: "Linkedin",
+                link: "https://www.linkedin.com/in/ossonsergio/",
             },
             {
-                text: "LeetCode",
-                link: "https://leetcode.com/somawatvinay/",
-            },
+                text: "Medium",
+                link: "https://medium.com/@sergioosson",
+            }
         ],
     },
     {
@@ -265,34 +353,13 @@ export const footer = [
             {
                 text: "Print this page",
                 func: "window.print()",
-            },
-            {
-                text: "Clone this page",
-                link: "https://github.com/vinaysomawat/vinaysomawat.github.io",
-            },
-        ],
-    },
-    {
-        label: "Social Profiles",
-        data: [
-            {
-                text: "Linkedin",
-                link: "https://www.linkedin.com/in/vinaysomawat/",
-            },
-            {
-                text: "Twitter",
-                link: "https://twitter.com/thesigmakid",
-            },
-            {
-                text: "Buy me a coffee",
-                link: "https://www.buymeacoffee.com/r194dME8y",
-            },
+            }
         ],
     },
     {
         label: "copyright-text",
         data: [
-            "Made with &hearts; by Vinay Somawat.",
+            "Theme by Vinay Somawat.",
             "&copy; No Copyrights. Feel free to use this template.",
         ],
     },

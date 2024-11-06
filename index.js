@@ -9,7 +9,7 @@ import {
 
 import { URLs } from './user-data/urls.js';
   
-  const { webProjects, softwareProjects, androidProjects, freelanceProjects } =
+  const { webProjects, softwareProjects, androidProjects, tsProjects, cvProjects } =
     projects;
   const { medium, gitConnected } = URLs;
   
@@ -28,6 +28,8 @@ import { URLs } from './user-data/urls.js';
     try {
       const response = await fetch(url);
       const { items } = await response.json();
+      console.log("url from medium", url)
+      console.log("blog from medium", items)
       populateBlogs(items, "blogs");
     } catch (error) {
       throw new Error(
@@ -42,7 +44,6 @@ import { URLs } from './user-data/urls.js';
       const response = await fetch(url);
       console.log(response);
       const { basics } = await response.json();
-      // populateBlogs(items, "blogs");
       mapBasicResponse(basics);
     } catch (error) {
       throw new Error(
@@ -192,6 +193,7 @@ import { URLs } from './user-data/urls.js';
     for (let i = 0; i < items.length; i++) {
       h4.innerHTML = items[i].projectName;
       a.href = items[i].preview;
+      a.prepend(h4);
   
       img.src = items[i].image;
   
@@ -211,6 +213,13 @@ import { URLs } from './user-data/urls.js';
         projectdesign.append(hr.cloneNode(true));
       }
     }
+  }
+
+  function sliceWithDots(text, length) {
+    if (text.length > length) {
+      return text.slice(0, length) + '...';
+    }
+    return text;
   }
   
   /**
@@ -239,7 +248,8 @@ import { URLs } from './user-data/urls.js';
       a.append(h4);
   
       const img = document.createElement("img");
-      img.src = items[i].thumbnail;
+      
+      img.src = (items[i].description).toString().match(/<img[^>]+src="([^">]+)"/)[1];
       img.className = "img-fluid";
       img.alt = items[i].title;
   
@@ -257,6 +267,7 @@ import { URLs } from './user-data/urls.js';
       const html = items[i].content;
       const [, doc] = /<p>(.*?)<\/p>/g.exec(html) || [];
       p.innerHTML = doc;
+      // p.innerHTML = sliceWithDots(doc, 150);
   
       const divSpan = document.createElement("div");
       for (const category of items[i].categories) {
@@ -452,7 +463,8 @@ import { URLs } from './user-data/urls.js';
   populateProjects(webProjects, "web-projects");
   populateProjects(softwareProjects, "software-projects");
   populateProjects(androidProjects, "android-projects");
-  populateProjects(freelanceProjects, "freelance-projects");
+  populateProjects(cvProjects, "computer-vision-projects");
+  populateProjects(tsProjects, "time-series-projects");
   
   populateExp_Edu(experience, "experience");
   populateExp_Edu(education, "education");
