@@ -5,6 +5,10 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+:root {
+	--badge-bg-color: #8c57c6;
+}
+
 html {
 	font-family: sans-serif;
 	-ms-text-size-adjust: 100%;
@@ -4844,7 +4848,7 @@ a.label:focus {
 	vertical-align: middle;
 	white-space: nowrap;
 	text-align: center;
-	background-color: brown;
+	background-color: var(--badge-bg-color);
 	border-radius: 10px;
 }
 .badge:empty {

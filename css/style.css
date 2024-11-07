@@ -1,3 +1,14 @@
+
+:root {
+	--main-bg-color: #d6c2f0;
+	--span-color: #8c57c6;
+	--timeline-icone: #361952;
+}
+
+.span-color {
+	color: var(--span-color)
+}
+
 @font-face {
 	font-family: "icomoon";
 	src: url("../fonts/icomoon/icomoon.eot?srf3rx");
@@ -138,7 +149,7 @@ figure figcaption {
 	width: 300px;
 	position: fixed;
 	z-index: 1001;
-	background-color: #f9bf3f;
+	background-color: var(--main-bg-color);
 	-webkit-transition: 0.5s;
 	-o-transition: 0.5s;
 	transition: 0.5s;
@@ -152,7 +163,7 @@ figure figcaption {
 		-o-transform: translateX(-300px);
 		transform: translateX(-300px);
 		padding-top: 4em;
-		background-color: #f9bf3f;
+		background-color: var(--main-bg-color);
 		height: auto;
 	}
 	.resume-content img {
@@ -519,7 +530,7 @@ body.offcanvas #colorlib-aside {
 	-o-transform: translateX(0);
 	transform: translateX(0);
 	width: 372px;
-	background-color: #f9bf3f;
+	background-color: var(--main-bg-color);
 	z-index: 999;
 	position: fixed;
 }
@@ -571,6 +582,18 @@ body.offcanvas .colorlib-nav-toggle {
 	display: flex;
 }
 
+.profile-cards-color {
+	color: #24292e; 
+	background-color: var(--main-bg-color);
+}
+
+.publish-date {
+	color: dimgray;
+	font-size: 12px;
+	margin-bottom: 0px;
+	font-weight: 600;
+}
+
 @media screen and (max-width: 768px) {
 	.colorlib-experience,
 	.colorlib-skills,
@@ -593,6 +616,7 @@ body.offcanvas .colorlib-nav-toggle {
 	.profile-cards {
 		display: flex;
 		flex-direction: column;
+		gap: 20px;
 	}
 }
 
@@ -678,7 +702,7 @@ body.offcanvas .colorlib-nav-toggle {
 
 .hire {
 	padding: 2em;
-	background: #f9bf3f;
+	background: var(--main-bg-color);
 	color: #000;
 	border-radius: 4px;
 }
@@ -842,7 +866,7 @@ body.offcanvas .colorlib-nav-toggle {
 	position: absolute;
 	display: block;
 	width: 4px;
-	background: #f9bf3f;
+	background: var(--main-bg-color);
 	top: 20px;
 	bottom: 20px;
 	margin-left: 29px;
@@ -881,14 +905,14 @@ body.offcanvas .colorlib-nav-toggle {
 	.timeline-entry
 	.timeline-entry-inner
 	.timeline-icon.color-2 {
-	background: brown;
+	background: var(--timeline-icone);
 	color: white;
 }
 .timeline-centered
 	.timeline-entry
 	.timeline-entry-inner
 	.timeline-icon.color-3 {
-	background: #f9bf3f;
+	background: var(--main-bg-color);
 }
 .timeline-centered
 	.timeline-entry
@@ -914,7 +938,7 @@ body.offcanvas .colorlib-nav-toggle {
 
 .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label {
 	position: relative;
-	background: #f9bf3f;
+	background: var(--main-bg-color);
 	color: #000;
 	padding: 1.5em;
 	margin-left: 60px;
@@ -954,7 +978,7 @@ body.offcanvas .colorlib-nav-toggle {
 }
 
 .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label .timeline-text {
-	margin-bottom: 0px;
+	margin-bottom: 5px;
 	font-size: 13px;
 }
 
@@ -1006,10 +1030,10 @@ body.offcanvas .colorlib-nav-toggle {
 	color: #ec5453;
 }
 .services.color-3 {
-	border-bottom: 2px solid #f9bf3f;
+	border-bottom: 2px solid var(--main-bg-color);
 }
 .services.color-3 .icon2 i {
-	color: #f9bf3f;
+	color: var(--main-bg-color);
 }
 .services.color-4 {
 	border-bottom: 2px solid #a84cb8;
@@ -1100,13 +1124,13 @@ body.offcanvas .colorlib-nav-toggle {
 	border-color: #ec5453 transparent transparent transparent;
 }
 .services.color-3 .icon {
-	background: #f9bf3f;
+	background: var(--main-bg-color);
 }
 .services.color-3 .icon:before {
-	border-color: transparent transparent #f9bf3f transparent;
+	border-color: transparent transparent var(--main-bg-color) transparent;
 }
 .services.color-3 .icon:after {
-	border-color: #f9bf3f transparent transparent transparent;
+	border-color: var(--main-bg-color) transparent transparent transparent;
 }
 .services.color-4 .icon {
 	background: #a84cb8;
@@ -1204,13 +1228,13 @@ body.offcanvas .colorlib-nav-toggle {
 }
 
 .progress-bar.color-3 {
-	background: #f9bf3f;
+	background: var(--main-bg-color);
 }
 .progress-bar.color-3:after {
-	background: #f9bf3f;
+	background: var(--main-bg-color);
 }
 .progress-bar.color-3 span {
-	color: #f9bf3f;
+	color: var(--main-bg-color);
 }
 .progress-bar.color-4 {
 	background: #a84cb8;
@@ -1249,13 +1273,13 @@ body.offcanvas .colorlib-nav-toggle {
 	color: #ec5453;
 }
 .progress-bar.color-8 {
-	background: #f9bf3f;
+	background: var(--main-bg-color);
 }
 .progress-bar.color-8:after {
-	background: #f9bf3f;
+	background: var(--main-bg-color);
 }
 .progress-bar.color-8 span {
-	color: #f9bf3f;
+	color: var(--main-bg-color);
 }
 .progress-bar.color-9 {
 	background: #a84cb8;
@@ -2018,7 +2042,7 @@ ul {
 	padding-left: 20px;
 	padding-right: 20px;
 	/* margin: 30px auto 20px; */
-	background: #f9bf3f;
+	background: var(--main-bg-color);
 	color: #000;
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
@@ -2059,11 +2083,11 @@ ul {
 }
 
 .accordion li.open .link {
-	color: #b63b4d;
+	color: var(--span-color);
 }
 
 .accordion li.open i {
-	color: #b63b4d;
+	color: var(--span-color);
 }
 
 .accordion li.open i.fa-chevron-down {
@@ -2079,7 +2103,7 @@ ul {
 
 .submenu {
 	display: none;
-	background: #f9bf3f;
+	background: var(--main-bg-color);
 	font-size: 14px;
 	padding-left: 0px;
 	padding-top: 10px;
@@ -2094,10 +2118,13 @@ ul {
 }
 
 .submenu li:hover {
-	background: rgba(255, 255, 0, 0.705);
-	box-shadow: -1px 1px 51px -20px rgba(0,0,0,1);
+	background: #e8ddf7;
+	box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
 	border-radius: 5px;
 	color: #fff;
+	-webkit-transition: all 0.50s ease-in-out;
+	-o-transition: all 0.50s ease-in-out;
+	transition: all 0.50s ease-in-out;
 }
 
 .submenu a {
@@ -2186,7 +2213,7 @@ span {
 }
 
 :root {
-	--footer-bg: #f9bf3f;
+	--footer-bg: var(--main-bg-color);
 	--color: #000;
 	--color-smooth: #000;
 	--input-border: #3a456a;
