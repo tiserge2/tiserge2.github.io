@@ -112,7 +112,7 @@ export const projects = {
             summary:
                 "RAG(Retrieval Augmented Generation) web application where you can upload your pdf and ask question about it. \
                 You can either question your own source of data of exisiting database.",
-            preview: "https://github.com/tiserge2/llm_chat",
+            preview: "https://github.com/tiserge2/chat-sos",
             techStack: ["LLM", "LangChain", "Pinecone", "OpenAI"],
         },
         {
