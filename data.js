@@ -1,5 +1,5 @@
 export const bio = [
-    "Hi, I’m Sergio Suzerain Osson, an unemployed guy. I focus on computer vision applied to remote sensing images",
+    "Hi, I’m Sergio Suzerain Osson, currently in professional transition. I focus on computer vision applied to remote sensing images",
     `My journey has woven together a deep interest in artificial intelligence and a practical approach to problem-solving, particularly through deep learning`,
     `Alongside remote sensing, I enjoy tackling web development projects, bringing both the front-end and back-end to life.
     Whether analyzing satellite images or crafting user-centric web experiences
