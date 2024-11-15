@@ -272,7 +272,12 @@ import { URLs } from './user-data/urls.js';
       p.className = "project-description";
       const html = items[i].content;
       const [, doc] = /<p>(.*?)<\/p>/g.exec(html) || [];
-      p.innerHTML = doc;
+      console.log("content", html)
+      if (doc == undefined) {
+        p.innerHTML = items[i].title
+      } else {
+        p.innerHTML = doc;
+      }
       // p.innerHTML = sliceWithDots(doc, 150);
   
       const divSpan = document.createElement("div");
