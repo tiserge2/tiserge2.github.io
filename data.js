@@ -1,11 +1,12 @@
 export const bio = [
-    "Hi, I’m Sergio Suzerain Osson, currently in professional transition. I focus on computer vision applied to remote sensing images",
-    `My journey has woven together a deep interest in artificial intelligence and a practical approach to problem-solving, particularly through deep learning`,
-    `Alongside remote sensing, I enjoy tackling web development projects, bringing both the front-end and back-end to life.
-    Whether analyzing satellite images or crafting user-centric web experiences
-    I’m passionate about using technology to create impactful, data-driven solutions.`,
-    "Thanks for taking the time to learn a little about me!",
+    "Hi, I’m Sergio Suzerain Osson. I specialize in computer vision applied to remote sensing imagery.",
+    "I’m currently pursuing a PhD in deep continual learning for satellite image time series at Université Bretagne Sud, focusing on deforestation monitoring in the Amazon.",
+    "My journey blends a deep passion for artificial intelligence with a hands-on approach to solving real-world problems, especially using deep learning.",
+    "Beyond remote sensing, I enjoy working on full-stack web development projects, seamlessly integrating both front-end and back-end technologies.",
+    "Whether I’m analyzing satellite images or building user-focused web applications, I’m driven by creating impactful, data-driven solutions.",
+    "Thanks for stopping by and learning a bit about me!",
 ];
+
 
 export const skills = [
     {
