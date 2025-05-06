@@ -284,6 +284,14 @@ export const experience = [
 
 export const education = [
     {
+        title: "Université Bretagne Sud",
+        duration: "2025-Now",
+        subtitle: "PhD Student, Vannes",
+        details: ["Working on Deep continual learning for satellite image time series."],
+        tags: [],
+        icon: "graduation-cap",
+    },
+    {
         title: "Université Paris Cité",
         duration: "2022-2024",
         subtitle: "MSc. in Computer Vision and Intelligent Machines, Paris",
